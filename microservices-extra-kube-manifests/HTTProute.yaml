@@ -5,18 +5,13 @@ metadata:
   namespace: boutique-app
 spec:
   hostnames:
-    - "app.devopsdock.site"
+    - "*.nemeziz.run.place"
   parentRefs:
   - group: gateway.networking.k8s.io
     namespace: default
     kind: Gateway
     name: app-alb-gateway
     sectionName: http
-  - group: gateway.networking.k8s.io
-    namespace: default
-    kind: Gateway
-    name: app-alb-gateway
-    sectionName: https
   rules:
   - backendRefs:
     - name: frontend
