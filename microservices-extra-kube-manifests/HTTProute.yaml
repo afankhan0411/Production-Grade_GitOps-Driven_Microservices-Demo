@@ -5,7 +5,7 @@ metadata:
   namespace: boutique-app
 spec:
   hostnames:
-    - "nemeziz.run.place"
+    - "*.nemeziz.run.place"
   parentRefs:
   - group: gateway.networking.k8s.io
     namespace: default
